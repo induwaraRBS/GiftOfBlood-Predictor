@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000b4;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputfield {
+    margin-bottom: 15px;
+}
+
+.inputfield label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inputfield input[type="text"],
+.inputfield select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.inputfield input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #b80202;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.inputfield input[type="submit"]:hover {
+    background-color: #005b8e;
+}
+
+.custom_select {
+    position: relative;
+}
+
+.custom_select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom_select select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.custom_select select::-ms-expand {
+    display: none;
+}
+
+.custom_select select option {
+    background-color: #fff;
+    color: #000;
+}
+
+
+ 

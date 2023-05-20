@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Predictor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Gift Of Blood
+        </div>
+
+        <form action="/" method="POST">
+            <div class="inputfield">
+                
+                <label for="mobiles">No.of mobiles</label>
+                <input type="text" class="input" name="mobiles" required>
+
+            </div>
+            <div class="inputfield">
+
+                <label for="cluster">Cluster</label>
+                <div class="custom_select">
+                    <select name="cluster" id="cluster">
+                        <option value="" select hidden>select</option>
+                        <option value="Peradeniya">Peradeniya</option> 
+                        <option value="Ampara">Ampara</option>           
+                        <option value="Kandy">Kandy</option>          
+                        <option value="Vavuniya"> Vavuniya  </option>     
+                        <option value="Trincomalee">Trincomalee </option>    
+                        <option value="Rathnapura">Rathnapura </option>     
+                        <option value="Colombo"> Colombo </option>       
+                        <option value="Kurunegala">Kurunegala</option>      
+                        <option value="Anurdhapura ">Anurdhapura </option>    
+                        <option value="Karapitiya"> Karapitiya</option>     
+                        <option value="Kaluthara"> Kaluthara</option>     
+                        <option value="Jaffna">Jaffna</option>        
+                        <option value="Hambanthota">Hambanthota</option>     
+                        <option value="CNTH">CNTH</option>            
+                        <option value="CIM">CIMCIM</option>             
+                        <option value="Chilaw">Chilaw</option>          
+                        <option value="Batticaloa">Batticaloa</option>      
+                        <option value="Badulla">Badulla</option>         
+                        <option value="Kamburugamuwa">Kamburugamuwa</option>   
+                        <option value="Gampaha">Gampaha</option>         
+                        <option value="Kegalle">Kegalle</option>         
+                        <option value="NuwaraEliya">NuwaraEliya</option>     
+                        <option value="Monaragala">Monaragala</option>      
+                        <option value="Matara">Matara</option>          
+                        <option value="Polonnaruwa">Polonnaruwa</option>     
+                    </select>
+                </div>
+
+            </div>
+            <div class="inputfield">
+                <input type="submit" class="btn" value="Predict Amount">
+            </div>
+        </form>
+        <div class="result">
+
+            <p>
+                {{pred}}
+            </p>
+        </div>
+    </div>
+</body>
+</html>
